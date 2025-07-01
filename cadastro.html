@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Contato</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <p>Cadastro de Contato</p>
+  <div class="container">
+    <div class="formulario">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+      </div>
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" id="sobrenome">
+      </div>
+      <div class="form-group full-width">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco">
+      </div>
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="text" id="telefone">
+      </div>
+    </div>
+    <div class="botoes">
+      <button class="btn verde" onclick="incluir()">INCLUIR</button>
+      <button class="btn laranja" onclick="editar()">EDITAR</button>
+      <button class="btn azul" onclick="salvar()">SALVAR</button>
+      <button class="btn branco" onclick="cancelar()">CANCELAR</button>
+      <button class="btn vermelho" onclick="excluir()">EXCLUIR</button>
+    </div>
+  </div>
+	  <div class="navegacao">
+    <button class="nav-btn" onclick="navegar('primeiro')">|&lt;</button>
+    <button class="nav-btn" onclick="navegar('anterior')">&lt;</button>
+    <button class="nav-btn" onclick="navegar('proximo')">&gt;</button>
+    <button class="nav-btn" onclick="navegar('ultimo')">&gt;|</button>
+  </div>
+	<h2 class="rodape">AGENDA DE CONTATOS</h2>
+	<script src="script.js"></script>
+</body>
+</html>
